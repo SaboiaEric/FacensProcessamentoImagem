@@ -38,7 +38,7 @@ class Watermark:
             for i in range(0, watermark_h):
                 for j in range(0, watermark_w):
                     if watermark[i,j][3] != 0:
-                        offset = 300
+                        offset = 290
                         h_offset = h - watermark_h - offset
                         w_offset = w - watermark_w - offset
                         overlay[w_offset + j, h_offset + i] = watermark[i,j]
