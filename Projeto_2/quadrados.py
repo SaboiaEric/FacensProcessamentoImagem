@@ -1,5 +1,11 @@
-import cv2
 import numpy as np
+import cv2
+
+
+kernel = np.array([[1, 1, 1],
+                   [1, 1, 1],
+                   [1, 1, 1]], dtype = np.uint8)
+
 
 dados =  np.array([[1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
                   [1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
@@ -11,10 +17,6 @@ dados =  np.array([[1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
                   [0, 0, 0, 1, 1, 1, 1, 1, 1, 0],
                   [0, 0, 0, 1, 1, 1, 1, 1, 1, 0],
                   [0, 0, 0, 1, 1, 1, 1, 1, 1, 0]], dtype = np.uint8)
-
-kernel = np.array([[1, 1, 1],
-                   [1, 1, 1],
-                   [1, 1, 1]], dtype = np.uint8)
 
 saida = np.zeros((10,10), dtype = np.uint8)
 
