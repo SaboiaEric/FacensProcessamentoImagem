@@ -1,9 +1,6 @@
 import cv2
 import numpy as np
 
-#Eric Saboia - 140730
-#Guilherme Panayotou - 140114
-
 dados =  np.array([[1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
                   [1, 1, 1, 0, 1, 1, 1, 1, 1, 1],
                   [1, 1, 0, 0, 1, 1, 1, 1, 1, 1],
@@ -39,3 +36,7 @@ for lin in range(0, len(saida[0]), 3):
                 saida[lin+1, col+2] = 0
 
 print("Quadrados existentes  %d"%np.count_nonzero(saida))
+
+
+#Eric Saboia - 140730
+#Guilherme Panayotou - 140114
